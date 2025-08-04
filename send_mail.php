@@ -7,6 +7,7 @@ error_log("POST data: " . print_r($_POST, true));
 error_log("FILES data: " . print_r($_FILES, true));
 
 require 'cors.php';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
@@ -31,20 +32,20 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-    $mail->Debugoutput = function($str, $level) {
+    $mail->Debugoutput = function ($str, $level) {
         error_log("PHPMailer Debug: $str");
     };
 
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'info.iciacse@gmail.com';
-    $mail->Password   = 'mzst kngz kdcy owpc';
+    $mail->Username   = 'info.icacsit@gmail.com';
+    $mail->Password   = 'zhcn rotu llkd adyi';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom('info.iciacse@gmail.com', 'Paper Submission System');
-    $mail->addAddress('info.iciacse@gmail.com', 'Paper Submissions');
+    $mail->setFrom('info.icacsit@gmail.com', 'Paper Submission System');
+    $mail->addAddress('info.icacsit@gmail.com', 'Paper Submissions');
 
     $mail->addReplyTo($_POST['Email_Address'], $_POST['Author_FUll_Name']);
 
@@ -116,14 +117,14 @@ try {
     ';
 
     $mail->AltBody = "New Paper Submission\n\n" .
-                    "Submission ID: " . $_POST['Submission_ID'] . "\n" .
-                    "Paper Title: " . $_POST['Paper_Title'] . "\n" .
-                    "Author Full Name: " . $_POST['Author_FUll_Name'] . "\n" .
-                    "Email Address: " . $_POST['Email_Address'] . "\n" .
-                    "Institution Name: " . $_POST['Institution_Name'] . "\n" .
-                    "Paper Track: " . $_POST['Paper_Track'] . "\n\n" .
-                    "File Status: " . ($file_attached ? "File attached" : "No file uploaded") . "\n" .
-                    "Submission Time: " . date('Y-m-d H:i:s');
+        "Submission ID: " . $_POST['Submission_ID'] . "\n" .
+        "Paper Title: " . $_POST['Paper_Title'] . "\n" .
+        "Author Full Name: " . $_POST['Author_FUll_Name'] . "\n" .
+        "Email Address: " . $_POST['Email_Address'] . "\n" .
+        "Institution Name: " . $_POST['Institution_Name'] . "\n" .
+        "Paper Track: " . $_POST['Paper_Track'] . "\n\n" .
+        "File Status: " . ($file_attached ? "File attached" : "No file uploaded") . "\n" .
+        "Submission Time: " . date('Y-m-d H:i:s');
 
     error_log("Attempting to send email...");
     $result = $mail->send();
@@ -134,7 +135,6 @@ try {
     } else {
         echo 'Email sending failed but no exception thrown.';
     }
-
 } catch (Exception $e) {
     error_log("PHPMailer Exception: " . $e->getMessage());
     error_log("Full error info: " . $mail->ErrorInfo);
@@ -144,4 +144,3 @@ try {
         echo "\nMailer Info: " . $mail->ErrorInfo;
     }
 }
-?>
