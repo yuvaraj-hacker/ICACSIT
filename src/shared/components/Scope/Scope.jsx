@@ -19,7 +19,7 @@ function Scope() {
                             <div className="flex justify-center items-center">
                                 <img className="h-[300px] object-top object-cover rounded-lg" src="/images/home/scope of conference.jpg" alt="Scope of Conference" />
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </section>
             </section>
