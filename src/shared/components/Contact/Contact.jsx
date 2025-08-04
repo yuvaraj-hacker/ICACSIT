@@ -63,6 +63,8 @@ function Contact() {
                         </div>
                         <div className="flex flex-col gap-6 bg-white p-8 rounded-xl shadow-xl w-full md:px-10">
                             <h2 className="text-3xl font-bold font-sans pb-5">Contact Details</h2>
+                            <img src="/images/home/touch.jpg" className='w-full  rounded-lg object-contain ' alt="" />
+
                             <div className="flex items-center gap-4">
                                 <i class="fi fi-ts-land-layer-location text-2xl text-red-500 flex items-center  "></i>
                                 <p className="md:text-2xl">Abuja, Nigeria</p>
@@ -75,6 +77,9 @@ function Contact() {
                                 <i class="fi fi-rr-envelope flex items-center text-2xl text-blue-500"></i>
                                 <p className="md:text-2xl">info.icacsit@gmail.com</p>
                             </div>
+
+
+
                         </div>
                     </div>
                 </div>
