@@ -60,7 +60,7 @@ export default function HeroSection({ data }) {
       <section>
         <div className="py-10 pt-10 md:pt-15">
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl font-bold pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+            <h1 className="text-3xl md:text-5xl font-bold md:pb-10 pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
               About the Conference
             </h1>
           </div>
@@ -75,7 +75,7 @@ export default function HeroSection({ data }) {
               </p>
               <div className="flex flex-col">
                 <p className="flex gap-2 md:text-2xl text-base items-center font-bold text-black">
-                  Location
+                <i class="fi fi-sr-marker flex items-center"></i>  Location
                 </p>
                 <p className="md:text-[20px]">Abuja, Nigeria</p>
               </div>
@@ -86,7 +86,7 @@ export default function HeroSection({ data }) {
       <section>
         <div className="md:py-10 md:pt-15">
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl font-bold md:pb-0 pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+            <h1 className="text-3xl md:text-5xl font-bold md:pb-3 pb-5  font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
               Scope of the Conference
             </h1>
           </div>

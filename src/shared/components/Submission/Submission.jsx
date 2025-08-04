@@ -128,7 +128,7 @@ function Submission() {
                     <div className='max-w-[90rem] mx-auto md:px-5 px-3 mb-5 '>
                         <div className='grid md:grid-cols-2 grid-cols-1 gap-10'>
                             <form onSubmit={handleSubmit} className='shadow-lg p-4 border border-gray-100 rounded-lg flex flex-col gap-5 h-fit'>
-                                <input type="text" placeholder='paper title' name="Paper_Title" value={formData.Paper_Title} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
+                                <input type="text" placeholder='Paper Title' name="Paper_Title" value={formData.Paper_Title} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
                                 <input type="text" placeholder='Author Full Name' name="Author_FUll_Name" value={formData.Author_FUll_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
                                 <input type="text" placeholder='Email Address ' name="Email_Address" id="Email_Address" value={formData.Email_Address} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
                                 <input type="text" placeholder='Institution Name' name="Institution_Name" id="Institution_Name" value={formData.Institution_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />

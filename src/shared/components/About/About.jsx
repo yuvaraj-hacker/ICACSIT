@@ -8,7 +8,7 @@ function About() {
                 <section>
                     <div className="py-10 pt-16  md:pt-10">
                         <div className="text-center">
-                            <h1 className="text-3xl md:text-5xl font-bold pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                            <h1 className="text-3xl md:text-5xl font-bold pb-6 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                                 About the Conference
                             </h1>
                         </div>
@@ -25,14 +25,14 @@ function About() {
                                 <div className="flex flex-col">
                                     <p className="flex gap-2 text-2xl items-center font-bold text-black">
                                         {/* <FaLocationDot className="text-[20px]" /> */}
-                                        Location
+                                        <i class="fi fi-sr-marker flex items-center"></i>   Location
                                     </p>
                                     <p className="text-[20px]">Abuja, Nigeria</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="py-10 pt-10 md:pt-10">
+                    <div className="py-10 pt-3 md:pt-3 ">
                         <div className="text-center">
                             <h1 className="text-3xl md:text-5xl font-bold pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                                 Vision of the Conference
