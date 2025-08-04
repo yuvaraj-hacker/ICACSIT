@@ -67,10 +67,10 @@ function Contact() {
                                 <i class="fi fi-ts-land-layer-location text-2xl text-red-500 flex items-center  "></i>
                                 <p className="md:text-2xl">Abuja, Nigeria</p>
                             </div>
-                            <div className="flex items-center gap-4">
+                            {/* <div className="flex items-center gap-4">
                                 <i class="fi fi-rs-phone-call text-2xl text-green-500 flex items-center"></i>
                                 <p className="md:text-2xl">+91 1234567890</p>
-                            </div>
+                            </div> */}
                             <div className="flex items-center gap-4">
                                 <i class="fi fi-rr-envelope flex items-center text-2xl text-blue-500"></i>
                                 <p className="md:text-2xl">info.icacsit@gmail.com</p>

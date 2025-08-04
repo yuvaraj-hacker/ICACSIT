@@ -37,9 +37,9 @@ export default function Footer() {
                 <li>
                   Email: <a href="mailto:support@acsitconference.com" className="hover:text-blue-500">info.icacsit@gmail.com</a>
                 </li>
-                <li>
+                {/* <li>
                   Phone: <a href="tel:+14157891234" className="hover:text-blue-500">+91 1234567890</a>
-                </li>
+                </li> */}
                 <li>
                   Location: Abuja, Nigeria
                 </li>

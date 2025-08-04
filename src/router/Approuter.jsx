@@ -24,7 +24,7 @@ export default function Approuter() {
                         <Route path='/scope' element={<ScopePage />} />
                         <Route path='/editorial' element={<EditorialPage />} />
                         <Route path='/Conference-tracks' element={<TracksPage />} />
-                        <Route path='/dates' element={<DatesPage />} />
+                           <Route path='/dates' element={<DatesPage />} />
                         <Route path='/paper-submission' element={<SubmissionPage />} />
                         <Route path='/contact' element={<ContactPage />} />
                     </Route>
