@@ -77,9 +77,6 @@ function Contact() {
                                 <i class="fi fi-rr-envelope flex items-center text-2xl text-blue-500"></i>
                                 <p className="md:text-2xl">info.icacsit@gmail.com</p>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>

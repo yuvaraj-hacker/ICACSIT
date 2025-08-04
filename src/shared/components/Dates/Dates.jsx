@@ -24,7 +24,7 @@ function Dates() {
             date: '2025-August-05',
         },
         {
-            title: 'Last date for registration',
+            title: 'Last Date for Registration',
             date: '2025-August-13',
         },
     ];
