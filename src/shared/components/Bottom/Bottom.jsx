@@ -9,7 +9,6 @@ function Bottom() {
             content: (
                 <>
                     {/* International Convention Center, */}
-
                     Abuja, Nigeria
                 </>
             ),
