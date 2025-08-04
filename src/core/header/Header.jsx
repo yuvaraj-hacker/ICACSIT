@@ -104,10 +104,10 @@ const Header = () => {
         </div>
       </section>
       <section className={` fixed top-0 right-0 h-full w-64 z-40 py-3  text-white   ${!isHome ? "bg-black/90" : " "}  ${scrolled ? "bg-black/90" : " "} ${menuOpen ? "translate-x-0 duration-300 bg-white" : "translate-x-full duration-300"} lg:block lg:relative lg:w-auto lg:translate-x-0`} >
-        <header className="max-w-[100rem] mx-auto md:px-5 px-2 h-full   w-full">
+        <header className="max-w-[110rem] mx-auto md:px-5 px-2 h-full   w-full">
           <div className="lg:flex lg:justify-between justify-center items-center px-2 py-1">
             <Link to='/'>
-              <img className='lg:w-40 w-40 lg:block hidden h-10' src="/images/home/logo.webp" alt="LOGO" />
+              <img className='lg:w-40 w-40 lg:block hidden h-14' src="/images/home/logo.webp" alt="LOGO" />
             </Link>
             <nav ref={dropdownRef}>
               <div className={`lg:space-x-3 lg:block mx-auto lg:pt-0 pt-20 ${menuOpen ? "flex flex-col space-y-4" : ""}`}>
