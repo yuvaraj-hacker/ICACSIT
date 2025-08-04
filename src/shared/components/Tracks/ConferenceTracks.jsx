@@ -84,6 +84,15 @@ function ConferenceTracks() {
                                 <li>Sustainable AI & Green Computing</li>
                             </ul>
                         </div>
+                        <div className=" mx-auto text-left py-6 px-4 flex flex-col gap-4 shadow-lg rounded-lg w-full h-full">
+                            <h1 className='md:text-2xl text-xl  font-semibold text-[#155DFC]'>  Computational Intelligence and Soft Computing</h1>
+                            <ul className="list-disc pl-5 space-y-2 md:text-lg">
+                                <li>Fuzzy Logic and Neural Networks</li>
+                                <li>Evolutionary Computation and Genetic Algorithms</li>
+                                <li>Swarm Intelligence and Nature-Inspired Computing</li>
+                                <li>Hybrid Intelligent Systems and Applications</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
