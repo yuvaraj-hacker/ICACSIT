@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Bottom() {
     const infoCards = [
         {
-            icon: <i className="fi fi-ts-land-layer-location flex items-center"></i>,
+            icon: <i className="fi fi-ts-land-layer-location flex items-center text-2xl"></i>,
             heading: 'Where',
             content: (
                 <>
@@ -14,12 +15,17 @@ function Bottom() {
             ),
         },
         {
-            icon: <i className="fi fi-rr-clock flex items-center"></i>,
+            icon: <i className="fi fi-rr-clock flex items-center text-2xl"></i>,
             heading: 'When',
-            content: 'August 18, 2025',
+            content: (
+                <>
+                    August 18, 2025<br />
+                    9:00 AM - 5:00 PM
+                </>
+            ),
         },
         {
-            icon: <i className="fi fi-rr-envelope flex items-center"></i>,
+            icon: <i className="fi fi-rr-envelope flex items-center text-2xl"></i>,
             heading: 'Email',
             content: 'info.icacsit@gmail.com',
         },
@@ -42,6 +48,11 @@ function Bottom() {
                             ))}
                         </div>
                     </div>
+                    <Link to='/paper-submission'>
+                        <button className='relative cursor-pointer px-8 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-lg rounded-lg hover:scale-105 duration-300 shadow-lg'>
+                            Register Now
+                        </button>
+                    </Link>
                 </div>
             </section>
         </>
