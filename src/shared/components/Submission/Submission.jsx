@@ -121,7 +121,7 @@ function Submission() {
             <section>
                 <section className="  pb-10 text-center mt-20">
                     <div className="text-center pt-10">
-                        <h1 className="text-3xl md:text-5xl font-bold pb-6 md:pb-10 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                        <h1 className="text-3xl md:text-4xl font-bold pb-6 md:pb-10 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                             New Paper Submission
                         </h1>
                     </div>
@@ -152,14 +152,14 @@ function Submission() {
                             </form>
                             <div>
                                 <div className="bg-gray-100 p-6 lg:px-20 rounded-xl flex flex-col justify-between shadow-md order-1 md:order-2">
-                                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-left text-blue-600">Submission Guidelines</h2>
+                                    <h2 className="text-xl md:text-2xl font-bold mb-4 text-left text-blue-600">Submission Guidelines</h2>
                                     <ul className="space-y-3 text-lg text-left" style={{ listStyleType: "circle" }}>
                                         <li>Ensure all author details are correctly filled.</li>
                                         <li>Upload a PDF or Word document of the paper.</li>
                                         <li>Only one submission per author will be accepted.</li>
                                         <li>Follow the formatting guidelines provided.</li>
                                     </ul>
-                                    <h2 className="text-2xl md:text-3xl font-bold mt-6 mb-4 text-left text-blue-600">Important Notes</h2>
+                                    <h2 className="text-xl md:text-2xl font-bold mt-6 mb-4 text-left text-blue-600">Important Notes</h2>
                                     <ul className="space-y-3 text-lg  text-left" style={{ listStyleType: "circle" }}>
                                         <li>Verify the accuracy of the contact details before submission.</li>
                                         <li>The first author will be contacted for further correspondence.</li>

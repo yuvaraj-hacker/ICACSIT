@@ -8,7 +8,7 @@ function About() {
                 <section>
                     <div className="py-10 pt-16  md:pt-10">
                         <div className="text-center">
-                            <h1 className="text-3xl md:text-5xl font-bold pb-6 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                            <h1 className="text-3xl md:text-4xl font-bold pb-6 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                                 About the Conference
                             </h1>
                         </div>
@@ -17,7 +17,7 @@ function About() {
                                 <img src="/images/home/young-man.jpg" alt="About Us" loading="lazy" className="h-[250px] w-[350px] md:h-[300px] md:w-full xl:h-[350px] rounded-[10px] object-cover" />
                             </div>
                             <div className="w-full md:w-[70%] font-sans">
-                                <h1 className="text-xl text-black md:text-4xl font-bold pb-3 md:pb-6"> The International Conference on Advanced Computer Science and Information Technology    </h1>
+                                <h1 className="text-xl text-black md:text-2xl font-bold pb-3 md:pb-6"> The International Conference on Advanced Computer Science and Information Technology    </h1>
                                 <p className="pb-3 md:pb-6 text-justify md:text-[18px] font-medium leading-relaxed">
                                     We are pleased to invite researchers, academicians, industry professionals, and students from around the world to join us for this prestigious event. The conference aims to bring together innovative minds to exchange and explore the latest advancements, trends, challenges, and solutions in the rapidly evolving fields of Computer Science and Information Technology.                                </p>
                                 <p className="pb-3 md:pb-6 text-justify md:text-[18px] font-medium leading-relaxed">
@@ -34,7 +34,7 @@ function About() {
                     </div>
                     <div className="py-10 pt-3 md:pt-3 ">
                         <div className="text-center">
-                            <h1 className="text-3xl md:text-5xl font-bold pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                            <h1 className="text-3xl md:text-4xl font-bold pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                                 Vision of the Conference
                             </h1>
                         </div>

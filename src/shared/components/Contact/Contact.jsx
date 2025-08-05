@@ -43,7 +43,7 @@ function Contact() {
             <section>
                 <div className="flex flex-col items-center md:mt-20 mt-10 py-10">
                     <div className="text-center pt-5">
-                        <h1 className="text-3xl md:text-5xl font-bold   font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                        <h1 className="text-3xl md:text-4xl font-bold   font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                             Contact Us
                         </h1>
                     </div>
@@ -67,15 +67,15 @@ function Contact() {
 
                             <div className="flex items-center gap-4">
                                 <i class="fi fi-ts-land-layer-location text-2xl text-red-500 flex items-center  "></i>
-                                <p className="md:text-2xl">Abuja, Nigeria</p>
+                                <p className="md:text-xl">Abuja, Nigeria</p>
                             </div>
                             {/* <div className="flex items-center gap-4">
                                 <i class="fi fi-rs-phone-call text-2xl text-green-500 flex items-center"></i>
-                                <p className="md:text-2xl">+91 1234567890</p>
+                               <p className="md:text-2xl">+91 1234567890</p>
                             </div> */}
                             <div className="flex items-center gap-4">
                                 <i class="fi fi-rr-envelope flex items-center text-2xl text-blue-500"></i>
-                                <p className="md:text-2xl">info.icacsit@gmail.com</p>
+                                <p className="md:text-xl">info.icacsit@gmail.com</p>
                             </div>
                         </div>
                     </div>

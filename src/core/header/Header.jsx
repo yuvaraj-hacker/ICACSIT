@@ -1,81 +1,27 @@
 import { Sling as Hamburger } from 'hamburger-react'
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import 'preline/preline';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [aboutDropDownOpen, setAboutDropDownOpen] = useState(false);
-  const [hoveredCategory, setHoveredCategory] = useState(null);
-  const dropdownRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpe, setIsDropdownOpe] = useState(false);
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+  const toggleDropdow = () => {
+    setIsDropdownOpe(!isDropdownOpe);
+  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const location = useLocation();
-  const isActive = (path) => {
-    if (location.pathname === path) {
-      return true;
-    }
-    const navItem = navLinks.find(link => link.to === path);
-    if (navItem && navItem.dropdown) {
-      return navItem.dropdown.some(item => location.pathname === item.to);
-    }
-    return false;
-  };
-  const navLinks = [
-    { to: "/", label: "Home" },
-    {
-      to: "/about",
-      label: "About Us",
-      dropdown: [
-        {
-          to: "/about",
-          label: "About the Conference",
-        },
-        {
-          to: "/scope",
-          label: "Scope of the Conference",
-        },
-        // {
-        //   to: "/organizing-committee",
-        //   label: "Organizing Committee",
-        // },
-        {
-          to: "/editorial",
-          label: "Editorial Board",
-        },
-      ],
-    },
-    {
-      to: " ",
-      label: "Author Desk",
-      dropdown: [
-        {
-          to: "/conference-tracks",
-          label: "Conference tracks",
-        },
-        {
-          to: "dates",
-          label: "Key Dates",
-        },
-        {
-          to: "/paper-submission",
-          label: "New Paper Submission",
-        },
-      ],
-    },
-    { to: "/contact", label: "Contact" },
-  ];
-  const toggleDropdown = (label) => {
-    setAboutDropDownOpen(aboutDropDownOpen === label ? null : label);
-  };
-  useEffect;
-
-  const handleMouseEnter = (category) => {
-    setHoveredCategory(category);
-  };
-  const handleMouseLeave = () => {
-    setHoveredCategory(null);
-  };
-
-
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -84,62 +30,80 @@ const Header = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
   const isHome = location.pathname === '/';
 
   return (
     <>
-      <section className={` lg:hidden block bg-black/90 ${scrolled ? "bg-black/90" : " "} `}>
-        <div className={`max-w-[80rem] mx-auto md:px-5 px-3 md:py-1 py-2  `}>
-          <div className="flex items-center justify-between lg:gap-0 gap-5">
-            <Link to='/'>
-              <div className="lg:hidden block">
-                <img className='w-32 h-12 object-contain' src="/images/home/logo.webp" alt="" />
-              </div>
-            </Link>
-            <div className={`lg:hidden block  ${menuOpen ? "z-50" : ""}`}>
-              <Hamburger toggled={menuOpen} color={menuOpen ? "#032530" : "#fff"} direction='right' size={20} toggle={setMenuOpen} />
+
+      <header className={`relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-3     ${!isHome || scrolled || (isHome && isMobile) ? "bg-black/90" : " bg-transparent"} `}>
+        <nav className="max-w-[110rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
+          <div className="flex items-center justify-between">
+            <a className="flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">
+              <Link to='/'>
+                <img className='lg:w-40 w-40 h-14' src="/images/home/logo.webp" alt="LOGO" />
+              </Link>
+            </a>
+            <div className="sm:hidden">
+              <button type="button" className="hs-collapse-toggle relative   flex justify-center items-center gap-x-2 rounded-lg  shadow-2xs  focus:outline-hidden   disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent "
+                id="hs-navbar-example-collapse"
+                aria-expanded={menuOpen ? "true" : "false"}
+                aria-controls="hs-navbar-example"
+                aria-label="Toggle navigation"
+                data-hs-collapse="#hs-navbar-example"
+                onClick={() => setMenuOpen(!menuOpen)} >
+                <Hamburger toggled={menuOpen} toggle={setMenuOpen} size={20} color={menuOpen ? "#fff" : "#fff"} direction="right" />
+                <span className="sr-only">Toggle navigation</span>
+              </button>
             </div>
           </div>
-        </div>
-      </section>
-      <section className={` fixed top-0 right-0 h-full w-64 z-40 py-3  text-white   ${!isHome ? "bg-black/90" : " "}  ${scrolled ? "bg-black/90" : " "} ${menuOpen ? "translate-x-0 duration-300 bg-white" : "translate-x-full duration-300"} lg:block lg:relative lg:w-auto lg:translate-x-0`} >
-        <header className="max-w-[110rem] mx-auto md:px-5 px-2 h-full   w-full">
-          <div className="lg:flex lg:justify-between justify-center items-center px-2 py-1">
-            <Link to='/'>
-              <img className='lg:w-40 w-40 lg:block hidden h-14' src="/images/home/logo.webp" alt="LOGO" />
-            </Link>
-            <nav ref={dropdownRef}>
-              <div className={`lg:space-x-3 lg:block mx-auto lg:pt-0 pt-20 ${menuOpen ? "flex flex-col space-y-4" : ""}`}>
-                {navLinks.map((link) => (
-                  <div key={link.to} className="inline-block group relative"
-                    onMouseEnter={() => window.innerWidth >= 768 && handleMouseEnter(link.label)}
-                    onMouseLeave={() => window.innerWidth >= 768 && handleMouseLeave()}>
-                    <Link to={link.to} className={`py-2 flex lg:w-[144px] w-full transition-all duration-300 ease-in-out lg:text-base md:text-sm justify-center items-center gap-2   font-semibold  lg:text-white   text-[#032530] ${isActive(link.to) || hoveredCategory === link.label ? 'md:border-t-0 duration-300 ' : ''} `}
-                      onClick={(e) => { if (link.dropdown) { e.preventDefault(); setHoveredCategory((prev) => (prev === link.label ? null : link.label)); } else { setMenuOpen(false); } }}   >
-                      {link.label}
-                      {link.dropdown && (<i className={`fi fi-rs-angle-small-down text-lg flex items-center transition-all lg:text-white font-bold  duration-300 ease-in-out  rounded-full ${hoveredCategory === link.label ? '   rotate-180 duration-100' : ' '} `}></i>)}
-                    </Link>
-                    {hoveredCategory === link.label && link.dropdown && (
-                      <>
-                        <div className="lg:absolute left-0 top-full lg:w-[260px] w-full bg-black transition-all rounded-md duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 md:p-0.5 z-10">
-                          {link.dropdown.map((dropdownlink) => (
-                            <>
-                              <Link key={dropdownlink.to} to={dropdownlink.to} className="block md:px-4 px-4 py-2  text-white md:text-start text-center md:bg-black bg-black rounded-lg " onClick={() => { setHoveredCategory(null); setMenuOpen(false); }} >
-                                {dropdownlink.label}
-                              </Link>
-                            </>
-                          ))}
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))}
+          <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse"   >
+            <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+              <a to='/' onClick={() => setIsDropdownOpen(false)} className="font-medium text-white focus:outline-hidden  text-base" href="/" aria-current="page">
+                Home
+              </a>
+              <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
+                <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdown} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-2 cursor-pointer font-medium ${isDropdownOpen ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpen} aria-label="Mega Menu"  >
+                  About Us
+                  <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
+                </button>
+                <div className="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
+                  role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
+                  <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/about">
+                    About the Conference
+                  </a>
+                  <a to='/scope' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/scope">
+                    Scope of the Conference
+                  </a>
+                  <a to='/editorial' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/editorial">
+                    Editorial Board
+                  </a>
+                </div>
               </div>
-            </nav>
+              <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
+                <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdow} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-2 cursor-pointer font-medium ${isDropdownOpe ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpe} aria-label="Mega Menu"   >
+                  Author Desk's
+                  <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}  ></i>
+                </button>
+                <div className="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
+                  role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
+                  <a to='/conference-tracks' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/conference-tracks">
+                    Conference Tracks
+                  </a>
+                  <a to='/dates' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/dates">
+                    Key Dates
+                  </a>
+                  <a to='/paper-submission' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/paper-submission">
+                    Paper Submission
+                  </a>
+                </div>
+              </div>
+              <a className="font-medium text-white text-base " href="/contact">
+                Contact Us
+              </a>
+            </div>
           </div>
-        </header>
-      </section>
+        </nav>
+      </header>
     </>
   );
 };
