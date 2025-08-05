@@ -32,7 +32,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="py-10 pt-3 md:pt-3 ">
+                    <div className="py-10 pt-3 md:pt-3 pb-10     ">
                         <div className="text-center">
                             <h1 className="text-3xl md:text-4xl font-bold pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                                 Vision of the Conference
