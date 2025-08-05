@@ -43,13 +43,13 @@ function Contact() {
             <section>
                 <div className="flex flex-col items-center md:mt-20 mt-10 py-10">
                     <div className="text-center pt-5">
-                        <h1 className="text-3xl md:text-4xl font-bold   font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                        <h1 className="text-3xl md:text-4xl font-bold    relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                             Contact Us
                         </h1>
                     </div>
                     <div className="grid md:grid-cols-2 gap-5 grid-cols-1 md:py-10 py-5 px-6 w-full max-w-5xl">
                         <div className="flex flex-col gap-4 md:gap-6 md:px-9 bg-white p-4 md:p-8 rounded-xl shadow-xl w-full">
-                            <h1 className="md:text-3xl text-xl font-bold font-sans text-gray-700 pb-5">Get in Touch</h1>
+                            <h1 className="md:text-3xl text-xl font-bold  text-gray-700 pb-5">Get in Touch</h1>
                             <form className="space-y-4" onSubmit={handleSubmit}>
                                 <input type="text" name="firstname" id="firstname" value={formData.firstname} onChange={handleChange} placeholder="Enter your name" className="w-full h-12 p-2 text-lg border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" required />
                                 <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" className="w-full h-12 p-2 text-lg border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" required />
@@ -62,7 +62,7 @@ function Contact() {
                             </form>
                         </div>
                         <div className="flex flex-col gap-6 bg-white p-8 rounded-xl shadow-xl w-full md:px-10">
-                            <h2 className="text-3xl font-bold font-sans pb-5">Contact Details</h2>
+                            <h2 className="text-3xl font-bold  pb-5">Contact Details</h2>
                             <img src="/images/home/touch.jpg" className='w-full  rounded-lg object-contain ' alt="" />
 
                             <div className="flex items-center gap-4">

@@ -8,12 +8,12 @@ function Scope() {
                 <section className='md:mt-16 mt-16 '>
                     <div className="md:py-2 pt-10 md:pt-15">
                         <div className="text-center">
-                            <h1 className="text-3xl md:text-4xl font-bold md:pb-0 pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                            <h1 className="text-3xl md:text-4xl font-bold md:pb-0 pb-5  relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                                 Scope of the Conference
                             </h1>
                         </div>
-                        <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto py-1 md:py-8 grid grid-cols-1 lg:grid-cols-2 lg:gap-15  font-sans" >
-                            <p className="md:text-[18px] text-justify font-medium leading-relaxed md:mb-0  mb-5">
+                        <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto py-1 md:py-8 grid grid-cols-1 lg:grid-cols-2 lg:gap-15  " >
+                            <p className="md:text-[18px] text-justify  leading-relaxed md:mb-0  mb-5">
                                 "The International Conference on Advanced Computer Science and Information Technology (ICACSIT) serves as a dynamic platform for researchers, academicians, industry professionals, and technology innovators to come together and share their latest findings, ideas, and innovations. This conference is dedicated to exploring cutting-edge advancements and emerging trends in computer science and information technology, fostering a global exchange of knowledge and collaboration and exploring cutting-edge advancements and emerging trends in computer science and information technology."
                             </p>
                             <div className="flex justify-center items-center">
@@ -24,11 +24,11 @@ function Scope() {
                 </section>
             </section>
             <section className="bg-white">
-                <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto py-1 grid grid-cols-1 lg:grid-cols-1  font-sans">
-                    <p className="mb-6 md:text-lg leading-relaxed text-justify font-medium ">
-                        The <strong>International Conference on Advances in Computer Science and Information Technology (ICACSIT)</strong> aims to bring together leading academicians, researchers, practitioners, and industry experts to exchange ideas, share insights, and present their latest research findings in the evolving fields of computer science and information technology.
+                <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto py-1 grid grid-cols-1 lg:grid-cols-1  ">
+                    <p className="mb-6 md:text-lg leading-relaxed text-justify  ">
+                        The <strong>International Conference on Advances in Computer Science and Information Technology </strong> aims to bring together leading academicians, researchers, practitioners, and industry experts to exchange ideas, share insights, and present their latest research findings in the evolving fields of computer science and information technology.
                     </p>
-                    <div className="grid md:grid-cols-3 gap-8 mb-10 font-medium ">
+                    <div className="grid md:grid-cols-3 gap-8 mb-10  ">
                         <div className=''>
                             <h3 className="text-xl font-semibold text-blue-800 mb-2">Core Areas of Interest</h3>
                             <ul className="list-disc list-inside space-y-1">

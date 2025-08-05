@@ -119,7 +119,7 @@ function Submission() {
             <section>
                 <section className="  pb-10 text-center mt-20">
                     <div className="text-center pt-10">
-                        <h1 className="text-3xl md:text-4xl font-bold pb-6 md:pb-10 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                        <h1 className="text-3xl md:text-4xl font-bold pb-6 md:pb-10  relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                             New Paper Submission
                         </h1>
                     </div>

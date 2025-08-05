@@ -58,46 +58,46 @@ const Header = () => {
           </div>
           <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse"   >
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-              <a to='/' onClick={() => setIsDropdownOpen(false)} className="font-medium text-white focus:outline-hidden  text-base" href="/" aria-current="page">
+              <a to='/' onClick={() => setIsDropdownOpen(false)} className=" text-white focus:outline-hidden  text-base" href="/" aria-current="page">
                 Home
               </a>
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
-                <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdown} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer font-medium ${isDropdownOpen ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpen} aria-label="Mega Menu"  >
+                <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdown} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpen ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpen} aria-label="Mega Menu"  >
                   About Us
                   <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
                 </button>
                 <div className="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
-                  <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/about">
+                  <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white   " href="/about">
                     About the Conference
                   </a>
-                  <a to='/scope' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/scope">
+                  <a to='/scope' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white   " href="/scope">
                     Scope of the Conference
                   </a>
-                  <a to='/editorial' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/editorial">
+                  <a to='/editorial' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white   " href="/editorial">
                     Editorial Board
                   </a>
                 </div>
               </div>
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
-                <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdow} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer font-medium ${isDropdownOpe ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpe} aria-label="Mega Menu"   >
+                <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdow} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpe ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpe} aria-label="Mega Menu"   >
                   Author Desk's
                   <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}  ></i>
                 </button>
                 <div className="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
-                  <a to='/conference-tracks' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/conference-tracks">
+                  <a to='/conference-tracks' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white " href="/conference-tracks">
                     Conference Tracks
                   </a>
-                  <a to='/dates' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/dates">
+                  <a to='/dates' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white " href="/dates">
                     Key Dates
                   </a>
-                  <a to='/paper-submission' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700" href="/paper-submission">
+                  <a to='/paper-submission' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white" href="/paper-submission">
                     Paper Submission
                   </a>
                 </div>
               </div>
-              <a className="font-medium text-white text-base sm:pb-0 pb-5" href="/contact">
+              <a className=" text-white text-base sm:pb-0 pb-5" href="/contact">
                 Contact Us
               </a>
             </div>

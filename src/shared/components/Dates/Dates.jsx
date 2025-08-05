@@ -34,7 +34,7 @@ function Dates() {
             <section>
                 <section className="  pb-10 text-center mt-20">
                     <div className="text-center pt-10">
-                        <h1 className="text-3xl md:text-4   xl font-bold pb-6 md:pb-10 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
+                        <h1 className="text-3xl md:text-4   xl font-bold pb-6 md:pb-10  relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                             Key Dates
                         </h1>
                     </div>
@@ -46,11 +46,11 @@ function Dates() {
                                         <div className="flex items-center justify-center text-3xl text-blue-600">
                                             <i className="fi fi-br-calendar-day"></i>
                                         </div>
-                                        <h2 className="text-lg font-semibold text-black text-center mt-4">
+                                        <h2 className="text-lg   text-black text-center mt-4">
                                             {item.title}
                                         </h2>
                                         <hr className="border-gray-300 w-full my-2" />
-                                        <p className="text-[18px] mt-2 font-medium text-center w-full transform transition-transform duration-500 hover:scale-110 text-black">
+                                        <p className="text-[18px] mt-2  text-center w-full transform transition-transform duration-500 hover:scale-110 text-black">
                                             {item.date}
                                         </p>
                                     </div>

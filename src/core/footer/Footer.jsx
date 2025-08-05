@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="w-4/5">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-white mb-3">Pages</h3>
-              <ul className="space-y-2 md:text-lg">
+              <h3 className="text-xl font-bold text-white mb-3">Pages</h3>
+              <ul className="space-y-2 md:text-base">
                 <li>
                   <a className="hover:text-blue-500" href="/" data-discover="true">Home</a>
                 </li>
@@ -17,12 +17,12 @@ export default function Footer() {
                 </li>
                 <li>
                   <a className="hover:text-blue-500" href="/scope" data-discover="true">Scope of the conference</a>
-                </li>
+                  </li>
               </ul>
             </div>
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-white mb-3">Conference Information</h3>
-              <ul className="space-y-2 md:text-lg">
+              <h3 className="text-xl font-bold text-white mb-3">Conference Information</h3>
+              <ul className="space-y-2 md:text-base">
                 <li>
                   <a className="hover:text-blue-500" href="/conference-tracks">Conference Tracks</a>
                 </li>
@@ -32,8 +32,8 @@ export default function Footer() {
               </ul>
             </div>
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-white mb-3">Contact</h3>
-              <ul className="space-y-2 md:text-lg">
+              <h3 className="text-xl font-bold text-white mb-3">Contact</h3>
+              <ul className="space-y-2 md:text-base">
                 <li>
                   Email: <a href="mailto:support@acsitconference.com" className="hover:text-blue-500">contact.icacsit@gmail.com</a>
                 </li>
@@ -46,7 +46,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-700 pt-4 md:text-base text-sm text-center text-gray-400">
+          <div className="border-t border-gray-700 pt-4 md:text-sm text-sm text-center text-gray-400">
             <p>© 2025 ICACSIT. All rights reserved.</p>
           </div>
         </div>
