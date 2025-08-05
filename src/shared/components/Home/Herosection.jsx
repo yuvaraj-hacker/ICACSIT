@@ -46,7 +46,7 @@ export default function HeroSection({ data }) {
           </p>
           <h1 className="text-3xl md:text-5xl xl:text-6xl font-semibold   tracking-tight bg-gradient-to-r from-[#FFD700] via-[#F3B552] to-[#8B8608] bg-clip-text text-transparent" style={{ transform: 'none', opacity: 1 }}>
             International Conference
-           </h1>
+          </h1>
           <span className="md:text-[25px]  py-3 md:py-7 " style={{ opacity: 1, transform: 'none' }} >
             Advances in Computer Science and Information Technology
           </span>
@@ -66,7 +66,7 @@ export default function HeroSection({ data }) {
           </div>
           <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto flex flex-col md:flex-row 2xl:items-start gap-5 lg:gap-15">
             <div className="w-full md:w-[40%] flex items-center  justify-center">
-              <img src="/images/home/young-man.jpg" alt="About Us" loading="lazy" className="h-[250px] w-[350px] md:h-[300px] md:w-full xl:h-[350px] rounded-[10px] object-cover" />
+              <img src="/images/home/young-man.jpg" alt="About Us" loading="lazy" className="  rounded-[10px] object-cover" />
             </div>
             <div className="w-full md:w-[70%] ">
               <h1 className="text-xl text-black md:text-2xl font-bold pb-3 md:pb-6">    The International Conference on Advanced Computer Science and Information Technology    </h1>
@@ -92,10 +92,9 @@ export default function HeroSection({ data }) {
           </div>
           <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto py-1 md:py-8 grid grid-cols-1 lg:grid-cols-2 lg:gap-15">
             <p className="md:text-[18px] text-justify  leading-relaxed md:mb-0  mb-5 ">
-              The International Conference on Advanced Computer Science and Information Technology serves as a dynamic platform for researchers, academicians, industry professionals, and technology innovators to come together and share their latest findings, ideas, and innovations. This conference is dedicated to exploring cutting-edge advancements and emerging trends in computer science and information technology, fostering a global exchange of knowledge and collaboration and exploring cutting-edge advancements and emerging trends in computer science and information technology.
-            </p>
+              The International Conference on Advanced Computer Science and Information Technology serves as a dynamic platform for researchers, academicians, industry professionals, and technology innovators to come together and share their latest findings, ideas, and innovations. This conference is dedicated to exploring cutting-edge advancements and emerging trends in computer science and information technology, fostering a global exchange of knowledge and collaboration. It covers a wide range of topics including artificial intelligence, machine learning, data science, cybersecurity, cloud computing, big data analytics, software engineering, Internet of Things (IoT), blockchain, computer networks, human-computer interaction, and quantum computing. The conference aims to promote interdisciplinary research, encourage academic-industry partnerships, and facilitate the development of intelligent, secure, and scalable technological solutions that can address real-world challenges across various domains.            </p>
             <div className="flex justify-center items-center">
-              <img className="h-[300px] object-top object-cover rounded-lg" src="/images/home/scope of conference.jpg" alt="Scope of Conference" />
+              <img className="  object-top object-cover rounded-lg" src="/images/home/scope of conference.jpg" alt="Scope of Conference" />
             </div>
           </div>
         </div>
