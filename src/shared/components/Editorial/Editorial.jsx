@@ -5,38 +5,12 @@ import Bottom from '../Bottom/Bottom';
 
 function Editorial() {
     const Tech = [
-
-        {
-            name: "Twana A. Hamad",
-            position: "Harran University",
-            location: "Turkey"
-        },
-
-        {
-            name: "Ammar Amjad",
-            position: " National Yang Ming Chiao Tung University",
-            location: "Taiwan"
-        },
-
-
-        {
-            name: "Qiang Tong",
-            position: "Shenzhen Institute of Information Technology",
-            location: "China"
-        },
-
-        {
-            name: "Abraham Musa Peter ",
-            position: "Federal University Lokoja",
-            location: "Nigeria"
-        },
+        { name: "Twana A. Hamad", position: "Harran University", location: "Turkey" },
+        { name: "Ammar Amjad", position: " National Yang Ming Chiao Tung University", location: "Taiwan" },
+        { name: "Qiang Tong", position: "Shenzhen Institute of Information Technology", location: "China" },
+        { name: "Abraham Musa Peter ", position: "Federal University Lokoja", location: "Nigeria" },
         { name: 'V. Pravenea', position: ' Dr.N.G.P Institute of Technology', location: ' India' },
-
-        {
-            name: "Waseem",
-            position: "Jiangsu University",
-            location: "China"
-        },
+        { name: "Waseem", position: "Jiangsu University", location: "China" },
         { name: 'Ankit Sharma', position: ' Nirma University', location: 'India' },
         { name: 'Theresa Omodunbi', position: 'Obafemi Awolowo University', location: 'Nigeria' },
         { name: 'Hua Qu', position: 'Tianjin Medical University', location: 'China' },
@@ -51,7 +25,6 @@ function Editorial() {
         { name: 'Masoud Asghari', position: 'University of Maragheh', location: 'Iran' },
         { name: 'Maryam Anwer', position: 'Majma University', location: 'Saudi Arabia' },
         { name: 'G. Vinodhini', position: 'Annamalai University', location: 'India' },
-
         { name: 'Asghar Ali Shah', position: 'Bahria university', location: 'Pakistan' },
 
     ];

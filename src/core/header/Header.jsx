@@ -97,7 +97,7 @@ const Header = () => {
                   </a>
                 </div>
               </div>
-              <a className="font-medium text-white text-base " href="/contact">
+              <a className="font-medium text-white text-base sm:pb-0 pb-5" href="/contact">
                 Contact Us
               </a>
             </div>
