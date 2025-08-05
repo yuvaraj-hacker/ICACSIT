@@ -37,14 +37,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'info.icacsit@gmail.com';
-    $mail->Password   = 'zhcn rotu llkd adyi'; // App Password
+    $mail->Username   = 'contact.icacsit@gmail.com';
+    $mail->Password   = 'ifis fndy zemd ddem'; // App Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
     // Email setup to admin
-    $mail->setFrom('info.icacsit@gmail.com', 'ICACSIT Enquiry');
-    $mail->addAddress('info.icacsit@gmail.com', 'ICACSIT Enquiry');
+    $mail->setFrom('contact.icacsit@gmail.com', 'ICACSIT Enquiry');
+    $mail->addAddress('contact.icacsit@gmail.com', 'ICACSIT Enquiry');
     $mail->addReplyTo($_POST['email'], $_POST['firstname']    );
     $mail->isHTML(true);
     $mail->Subject = 'New Contact Form Submission';
@@ -94,12 +94,12 @@ try {
     $replyMail->isSMTP();
     $replyMail->Host       = 'smtp.gmail.com';
     $replyMail->SMTPAuth   = true;
-    $replyMail->Username   = 'info.icacsit@gmail.com';
+    $replyMail->Username   = 'contact.icacsit@gmail.com';
     $replyMail->Password   = 'zhcn rotu llkd adyi';
     $replyMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $replyMail->Port       = 587;
 
-    $replyMail->setFrom('info.icacsit@gmail.com', 'ICACSIT Team');
+    $replyMail->setFrom('contact.icacsit@gmail.com', 'ICACSIT Team');
     $replyMail->addAddress($_POST['email'], $_POST['firstname']);
     $replyMail->isHTML(true);
     $replyMail->Subject = 'Thank you for your enquiry - ICACSIT 2025';

@@ -75,7 +75,7 @@ function Contact() {
                             </div> */}
                             <div className="flex items-center gap-4">
                                 <i class="fi fi-rr-envelope flex items-center text-2xl text-blue-500"></i>
-                                <p className="md:text-xl">info.icacsit@gmail.com</p>
+                                <p className="md:text-xl">contact.icacsit@gmail.com</p>
                             </div>
                         </div>
                     </div>

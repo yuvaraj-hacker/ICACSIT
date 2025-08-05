@@ -35,7 +35,7 @@ export default function Footer() {
               <h3 className="text-2xl font-bold text-white mb-3">Contact</h3>
               <ul className="space-y-2 md:text-lg">
                 <li>
-                  Email: <a href="mailto:support@acsitconference.com" className="hover:text-blue-500">info.icacsit@gmail.com</a>
+                  Email: <a href="mailto:support@acsitconference.com" className="hover:text-blue-500">contact.icacsit@gmail.com</a>
                 </li>
                 {/* <li>
                   Phone: <a href="tel:+14157891234" className="hover:text-blue-500">+91 1234567890</a>

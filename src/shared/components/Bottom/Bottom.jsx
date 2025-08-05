@@ -26,7 +26,7 @@ function Bottom() {
         {
             icon: <i className="fi fi-rr-envelope flex items-center text-2xl"></i>,
             heading: 'Email',
-            content: 'info.icacsit@gmail.com',
+            content: 'contact.icacsit@gmail.com',
         },
     ];
     return (
