@@ -66,7 +66,7 @@ function Contact() {
                                 <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" className="w-full h-12 p-2 text-lg border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" required />
                                 <input type="text" name="number" id="number" onChange={handleChange} value={formData.number} placeholder="Enter your number" className="w-full h-12 p-2 text-lg border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" required />
                                 <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Enter your message" className="w-full h-40 p-4 text-lg border rounded-lg shadow-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-600" required   ></textarea>
-                                <button type="submit" className="w-full cursor-pointer p-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-500 flex justify-center items-center gap-2"  >
+                                <button type="submit" className="w-full cursor-pointer p-3   bg-blue-600 text-white font-bold rounded-md hover:bg-blue-500 flex justify-center items-center gap-2"  >
                                     {status === 'Sending...' ? 'Submitting...' : 'Send message'}
                                     {/* Submit */}
                                 </button>
