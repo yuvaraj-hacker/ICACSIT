@@ -8,7 +8,7 @@ function Edit({ position, name, location }) {
                     <div>
                         {/* <i class="fi fi-rr-circle-user text-xl"></i> */}
                         <h3 className="md:text-lg font-semibold   text-left  -hover:text-blue-600 transition-colors duration-300">
-                            Dr. {name}, <span className='  text-gray-600 italic'>{position}, {location}</span>
+                            Dr. {name}, <span className='  text-gray-600 font-medium italic'>{position}, {location}</span>
                         </h3>
                     </div>
                     {/* <div className="flex items-center justify-center gap-2 text-gray-600">
