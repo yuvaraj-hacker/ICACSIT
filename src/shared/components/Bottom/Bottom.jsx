@@ -41,8 +41,8 @@ function Bottom() {
                                     <div className="p-4 rounded-full bg-gradient-to-r from-blue-500 to-[#064ce4e1] text-white shadow-md flex">
                                         {card.icon}
                                     </div>
-                                    <h1 className="text-3xl  text-white">{card.heading}</h1>
-                                    <p className="text-[20px] max-w-xl text-white">{card.content}</p>
+                                    <h1 className="text-3xl font-light  text-white">{card.heading}</h1>
+                                    <p className="text-[18px] max-w-xl text-white">{card.content}</p>
                                 </div>
                             ))}
                         </div>

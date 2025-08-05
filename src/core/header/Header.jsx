@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <>
 
-      <header className={`relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-3     ${!isHome || scrolled || (isHome && isMobile) ? "bg-black/90" : " bg-transparent"} `}>
+      <header className={`relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-3     ${!isHome || scrolled || (isHome && isMobile) ? "bg-[#1457DF]/90" : " bg-transparent"} `}>
         <nav className="max-w-[100rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
           <div className="flex items-center justify-between">
             <a className="flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">
@@ -66,15 +66,15 @@ const Header = () => {
                   About Us
                   <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
                 </button>
-                <div className="hs-dropdown-menu border border-white sm:mt-0 mt-5 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
+                <div className="hs-dropdown-menu border border-white sm:mt-0 mt-5 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-white  before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
-                  <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white   " href="/about">
+                  <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-[#1457DF]  font-medium  " href="/about">
                     About the Conference
                   </a>
-                  <a to='/scope' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white   " href="/scope">
+                  <a to='/scope' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-[#1457DF] font-medium" href="/scope">
                     Scope of the Conference
                   </a>
-                  <a to='/editorial' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white   " href="/editorial">
+                  <a to='/editorial' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-[#1457DF]  font-medium " href="/editorial">
                     Editorial Board
                   </a>
                 </div>
@@ -84,15 +84,15 @@ const Header = () => {
                   Author Desk's
                   <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}  ></i>
                 </button>
-                <div className="hs-dropdown-menu  border border-white sm:mt-0 mt-5  transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
+                <div className="hs-dropdown-menu  border border-white sm:mt-0 mt-5  transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-white before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
-                  <a to='/conference-tracks' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white " href="/conference-tracks">
+                  <a to='/conference-tracks' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-[#1457DF]   font-medium" href="/conference-tracks">
                     Conference Tracks
                   </a>
-                  <a to='/dates' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white " href="/dates">
+                  <a to='/dates' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-[#1457DF]  font-medium  " href="/dates">
                     Key Dates
                   </a>
-                  <a to='/paper-submission' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white" href="/paper-submission">
+                  <a to='/paper-submission' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-[#1457DF]  font-medium" href="/paper-submission">
                     Paper Submission
                   </a>
                 </div>
