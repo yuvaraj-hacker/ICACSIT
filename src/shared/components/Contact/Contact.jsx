@@ -70,7 +70,6 @@ function Contact() {
                                     {status === 'Sending...' ? 'Submitting...' : 'Send message'}
                                     {/* Submit */}
                                 </button>
-
                             </form>
                         </div>
                         {/* <div className="flex flex-col gap-6 bg-white p-8 rounded-xl shadow-xl w-full md:px-10">
