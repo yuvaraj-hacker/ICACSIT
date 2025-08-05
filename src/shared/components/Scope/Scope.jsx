@@ -14,7 +14,7 @@ function Scope() {
                         </div>
                         <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto py-1 md:py-8 grid grid-cols-1 lg:grid-cols-2 lg:gap-15  " >
                             <p className="md:text-[18px] text-justify  leading-relaxed md:mb-0  mb-5">
-                                "The International Conference on Advanced Computer Science and Information Technology (ICACSIT) serves as a dynamic platform for researchers, academicians, industry professionals, and technology innovators to come together and share their latest findings, ideas, and innovations. This conference is dedicated to exploring cutting-edge advancements and emerging trends in computer science and information technology, fostering a global exchange of knowledge and collaboration and exploring cutting-edge advancements and emerging trends in computer science and information technology."
+                                The International Conference on Advanced Computer Science and Information Technology serves as a dynamic platform for researchers, academicians, industry professionals, and technology innovators to come together and share their latest findings, ideas, and innovations. This conference is dedicated to exploring cutting-edge advancements and emerging trends in computer science and information technology, fostering a global exchange of knowledge and collaboration and exploring cutting-edge advancements and emerging trends in computer science and information technology.
                             </p>
                             <div className="flex justify-center items-center">
                                 <img className="h-[300px] object-top object-cover rounded-lg" src="/images/home/scope of conference.jpg" alt="Scope of Conference" />
@@ -30,8 +30,8 @@ function Scope() {
                     </p>
                     <div className="grid md:grid-cols-3 gap-8 mb-10  ">
                         <div className=''>
-                            <h3 className="text-xl font-semibold text-blue-800 mb-2">Core Areas of Interest</h3>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h3 className="text-xl md:text-2xl  font-semibold text-blue-800 mb-2">Core Areas of Interest</h3>
+                            <ul className="list-disc list-inside space-y-1 md:text-[18px]">
                                 <li>Advanced Algorithms and Data Structures</li>
                                 <li>Artificial Intelligence and Machine Learning</li>
                                 <li>Big Data Analytics and Data Science</li>
@@ -45,8 +45,8 @@ function Scope() {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold text-blue-800 mb-2">Emerging Technologies</h3>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-800 mb-2 ">Emerging Technologies</h3>
+                            <ul className="list-disc list-inside space-y-1 md:text-[18px]">
                                 <li>Blockchain and Distributed Ledgers</li>
                                 <li>Quantum Computing</li>
                                 <li>AR/VR and Mixed Reality</li>
@@ -56,8 +56,8 @@ function Scope() {
                             </ul>
                         </div>
                         <div className="md:mb-10">
-                            <h3 className="text-xl font-semibold text-blue-800 mb-2">Information Technology Applications</h3>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h3 className="text-xl md:text-2xl  font-semibold text-blue-800 mb-2">Information Technology Applications</h3>
+                            <ul className="list-disc list-inside space-y-1 md:text-[18px]">
                                 <li>Health Informatics and Bioinformatics</li>
                                 <li>E-Governance and Smart Cities</li>
                                 <li>Educational Technologies and E-Learning</li>

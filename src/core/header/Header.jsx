@@ -36,7 +36,7 @@ const Header = () => {
     <>
 
       <header className={`relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-3     ${!isHome || scrolled || (isHome && isMobile) ? "bg-black/90" : " bg-transparent"} `}>
-        <nav className="max-w-[110rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
+        <nav className="max-w-[100rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
           <div className="flex items-center justify-between">
             <a className="flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">
               <Link to='/'>
@@ -57,7 +57,7 @@ const Header = () => {
             </div>
           </div>
           <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse"   >
-            <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+            <div className="flex flex-col gap-8 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
               <a to='/' onClick={() => setIsDropdownOpen(false)} className=" text-white focus:outline-hidden  text-base" href="/" aria-current="page">
                 Home
               </a>
@@ -66,7 +66,7 @@ const Header = () => {
                   About Us
                   <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
                 </button>
-                <div className="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
+                <div className="hs-dropdown-menu border border-white sm:mt-0 mt-5 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
                   <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white   " href="/about">
                     About the Conference
@@ -79,12 +79,12 @@ const Header = () => {
                   </a>
                 </div>
               </div>
-              <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
+              <div className="hs-dropdown  [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
                 <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdow} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpe ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpe} aria-label="Mega Menu"   >
                   Author Desk's
                   <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}  ></i>
                 </button>
-                <div className="hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
+                <div className="hs-dropdown-menu  border border-white sm:mt-0 mt-5  transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-black before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
                   <a to='/conference-tracks' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white " href="/conference-tracks">
                     Conference Tracks
