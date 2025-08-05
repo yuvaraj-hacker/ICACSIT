@@ -12,11 +12,9 @@ function Edit({ position, name, location }) {
                         </h3>
                     </div>
                     {/* <div className="flex items-center justify-center gap-2 text-gray-600">
-
                         <p className="text-sm ">{position}</p>
                     </div>
                     <div className="flex items-center justify-center gap-2 text-gray-500">
-
                         <p className="text-sm">{location}</p>
                     </div> */}
                 </div>
