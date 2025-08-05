@@ -5,30 +5,30 @@ export default function HeroSection({ data }) {
   const deadlines = [
     {
       title: 'Full Paper Submission Deadline',
-      date: '2025-July-01',
+      date: '2025-January-01',
     },
 
     {
       title: 'Notification of Decision',
-      date: '2025-July-10',
+      date: '2025-January-10',
     },
     {
       title: 'Deadline for Submitting Revised Full Paper',
-      date: '2025-July-18',
+      date: '2025-January-18',
     },
 
     {
       title: 'Notification of Acceptance',
-      date: '2025-July-25',
+      date: '2025-January-25',
     },
 
     {
       title: 'Camera-Ready Submission',
-      date: '2025-August-05',
+      date: '2025-February-05',
     },
     {
       title: 'Last Date for Registration',
-      date: '2025-August-13',
+      date: '2025-February-13',
     },
 
   ];
@@ -42,7 +42,7 @@ export default function HeroSection({ data }) {
         <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-black/45 to-black/10"></div>
         <div className="relative flex flex-col py-[40vh] px-7 md:px-30 lg:px-70 text-white text-center items-center">
           <p className="text-xl md:text-4xl font-bold font-mono" style={{ opacity: 1, transform: 'none' }} >
-            18<sup>th</sup> August - 2025
+            18<sup>th</sup> February - 2025
           </p>
           <h1 className="text-3xl md:text-5xl xl:text-6xl font-medium font-sans tracking-tight bg-gradient-to-r from-[#FFD700] via-[#F3B552] to-[#8B8608] bg-clip-text text-transparent" style={{ transform: 'none', opacity: 1 }}>
             International Conference

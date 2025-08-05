@@ -18,7 +18,7 @@ function Bottom() {
             heading: 'When',
             content: (
                 <>
-                    August 18, 2025<br />
+                    February 18, 2025<br />
                     9:00 AM - 5:00 PM
                 </>
             ),
