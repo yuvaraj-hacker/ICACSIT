@@ -24,23 +24,26 @@ function Editorial() {
             position: "Shenzhen Institute of Information Technology",
             location: "China"
         },
-        {
-            name: "Waseem",
-            position: "Jiangsu University",
-            location: "China"
-        },
+
         {
             name: "Abraham Musa Peter ",
             position: "Federal University Lokoja",
             location: "Nigeria"
         },
         { name: 'V. Pravenea', position: ' Dr.N.G.P Institute of Technology', location: ' India' },
+
+        {
+            name: "Waseem",
+            position: "Jiangsu University",
+            location: "China"
+        },
         { name: 'Ankit Sharma', position: ' Nirma University', location: 'India' },
         { name: 'Theresa Omodunbi', position: 'Obafemi Awolowo University', location: 'Nigeria' },
         { name: 'Hua Qu', position: 'Tianjin Medical University', location: 'China' },
         { name: 'Satyabrata Roy', position: 'Manipal University Jaipur', location: 'India' },
         { name: 'Chen Li', position: 'Hangzhou TCM Hospital', location: 'China' },
         { name: 'K. Ramesh', position: ' V.R.S. College of Engineering and Technology', location: ' India' },
+        { name: 'Asma Sbeih', position: 'Palestine Ahliya university', location: 'Palestine' },
         { name: 'R. Veerandrakumar', position: ' Panimalar Engineering College', location: 'India' },
         { name: 'Asef Shahriar', position: 'Khulna University of Engineering & Technology', location: 'Bangladesh' },
         { name: 'Zhao Qianyi', position: 'Jinan University', location: 'China' },
@@ -48,7 +51,7 @@ function Editorial() {
         { name: 'Masoud Asghari', position: 'University of Maragheh', location: 'Iran' },
         { name: 'Maryam Anwer', position: 'Majma University', location: 'Saudi Arabia' },
         { name: 'G. Vinodhini', position: 'Annamalai University', location: 'India' },
-        { name: 'Asma Sbeih', position: 'Palestine Ahliya university', location: 'Palestine' },
+
         { name: 'Asghar Ali Shah', position: 'Bahria university', location: 'Pakistan' },
 
     ];
