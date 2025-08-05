@@ -46,9 +46,7 @@ function Submission() {
             formDataToSend.append('Email_Address', formData.Email_Address);
             formDataToSend.append('Institution_Name', formData.Institution_Name);
             formDataToSend.append('Paper_Track', formData.Paper_Track);
-            if (formData.Paper_File) {
-                formDataToSend.append('Paper_File', formData.Paper_File);
-            }
+            if (formData.Paper_File) { formDataToSend.append('Paper_File', formData.Paper_File); }
             const googleSheetsParams = new URLSearchParams();
             googleSheetsParams.append('Submission_ID', uniqueId);
             googleSheetsParams.append('journal_name', journalName);
@@ -125,13 +123,13 @@ function Submission() {
                             New Paper Submission
                         </h1>
                     </div>
-                    <div className='max-w-[90rem] mx-auto md:px-5 px-3 mb-5 '>
+                    <div className='max-w-[90rem] mx-auto md:px-5 px-3 mb-5'>
                         <div className='grid md:grid-cols-2 grid-cols-1 gap-10'>
                             <form onSubmit={handleSubmit} className='shadow-lg p-4 border border-gray-100 rounded-lg flex flex-col gap-5 h-fit'>
-                                <input type="text" placeholder='Paper Title' name="Paper_Title" value={formData.Paper_Title} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
-                                <input type="text" placeholder='Author Full Name' name="Author_FUll_Name" value={formData.Author_FUll_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
-                                <input type="text" placeholder='Email Address ' name="Email_Address" id="Email_Address" value={formData.Email_Address} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
-                                <input type="text" placeholder='Institution Name' name="Institution_Name" id="Institution_Name" value={formData.Institution_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
+                                <input type="text" placeholder='Paper Title' required name="Paper_Title" value={formData.Paper_Title} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
+                                <input type="text" placeholder='Author Full Name' required name="Author_FUll_Name" value={formData.Author_FUll_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
+                                <input type="text" placeholder='Email Address' required name="Email_Address" id="Email_Address" value={formData.Email_Address} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
+                                <input type="text" placeholder='Institution Name' required name="Institution_Name" id="Institution_Name" value={formData.Institution_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
                                 <select name="Paper_Track" id="Paper_Track" value={formData.Paper_Track || ""} onChange={handleFileInputChange} required className="p-3 border rounded-lg">
                                     <option value="">Select Paper Track</option>
                                     <option value="Artificial Intelligence & Machine Learning">Artificial Intelligence & Machine Learning</option>
