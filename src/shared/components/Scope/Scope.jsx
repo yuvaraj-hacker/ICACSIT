@@ -6,7 +6,7 @@ function Scope() {
         <>
             <section>
                 <section className='md:mt-16 mt-16 '>
-                    <div className="md:py-10 pt-10 md:pt-15">
+                    <div className="md:py-2 pt-10 md:pt-15">
                         <div className="text-center">
                             <h1 className="text-3xl md:text-4xl font-bold md:pb-0 pb-5 font-sans relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
                                 Scope of the Conference
@@ -25,7 +25,7 @@ function Scope() {
             </section>
             <section className="bg-white">
                 <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto py-1 grid grid-cols-1 lg:grid-cols-1  font-sans">
-                    <p className="mb-6 text-lg leading-relaxed text-justify font-medium ">
+                    <p className="mb-6 md:text-lg leading-relaxed text-justify font-medium ">
                         The <strong>International Conference on Advances in Computer Science and Information Technology (ICACSIT)</strong> aims to bring together leading academicians, researchers, practitioners, and industry experts to exchange ideas, share insights, and present their latest research findings in the evolving fields of computer science and information technology.
                     </p>
                     <div className="grid md:grid-cols-3 gap-8 mb-10 font-medium ">
@@ -67,8 +67,6 @@ function Scope() {
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
             </section>
             <Bottom />
